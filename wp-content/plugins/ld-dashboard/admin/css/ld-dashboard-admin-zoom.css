@@ -1,0 +1,121 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ /*============================
+ Zoom Detail Fields
+ ============================*/
+#zoom-meeting-fields .postbox-header {
+    background: #e8edf0;
+}
+#zoom-meeting-fields .inside {
+    padding: 0;
+    margin:0;
+}
+#zoom-meeting-fields .ld-single-grid {
+    padding: 15px 1.5%;
+    background: #f8f8f8;
+}
+#zoom-meeting-fields .ld-single-grid:nth-child(2n+2){
+  background: #fff;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content.ld-dashboard-meeting-time  {
+    flex-direction: unset;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content .meeting-time {
+    margin-right: 15px;
+}
+#zoom-meeting-fields .meeting-time span {
+    display: block;
+    margin-bottom: 5px;
+}
+#zoom-meeting-fields input[type="datetime-local"] {
+    width: 338px;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content input[type="checkbox"]{
+    width: 60px;
+    box-shadow: none;
+    height: 28px;
+    position: relative;
+    border-radius: 80px;
+    transition: 0.3s;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content input[type=checkbox]:checked {
+    background-color: #007cba;
+    border-color: #007cba;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content input[type=checkbox]:checked::before {
+    content: "Yes";
+    top: 16px;
+    font-size: 14px;
+    position: relative;
+    right: -12px;
+    font-weight: 500;
+    color: #fff;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content input[type=checkbox]::before {
+    content: "No";
+    top: 13px;
+    font-size: 14px;
+    position: relative;
+    right: -10px;
+    font-weight: 500;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content input[type="checkbox"]:after {
+    content: "";
+    background:#8c8f94;
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 100px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s;
+}
+#zoom-meeting-fields .ld-dashboard-zoom-meeting-field-content input[type=checkbox]:checked::after {
+    -webkit-transform: translateX(33px);
+    -ms-transform: translateX(33px);
+    transform: translateX(33px);
+    background: #ffffff !important;
+}
+.ld-dashboard-zoom-api-status.zoom-api-inactive,
+.ld-dashboard-zoom-api-status.zoom-api-active {
+    color: #fff;
+    background:#ff0000;
+    display: block;
+    max-width:90px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50px;
+}
+.ld-dashboard-zoom-api-status.zoom-api-active {
+    background: #09a436;
+}
+.ld-dashboard-zoom-api-status span.dashicons{
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 2px;
+}
+.ld-dashboard-meetings-actions-wrapper a.ld-dashboard-meeting-action.ld-dashboard-meeting-start-btn,
+.ld-dashboard-meetings-actions-wrapper a.ld-dashboard-meeting-action.ld-delete-meeting-action {
+    background: #28ab36;
+    padding: 4px 25px 6px;
+    line-height: 15px;
+    border-radius: 50px;
+    color: #fff;
+    margin-right: 5px;
+    margin-top: 8px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.ld-dashboard-meetings-actions-wrapper a.ld-dashboard-meeting-action.ld-delete-meeting-action{
+    background:#e81c1c;
+}
+.ld-dashboard-meetings-actions-wrapper a.ld-dashboard-meeting-action.ld-dashboard-meeting-start-btn:hover{
+    background:#0e7c19;
+}
+.ld-dashboard-meetings-actions-wrapper a.ld-dashboard-meeting-action.ld-delete-meeting-action:hover{
+    background:#c10e0e;
+}
